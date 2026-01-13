@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4 Bulan Bersama 💕</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #ff758c, #ff7eb3);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: radial-gradient(circle at top, rgba(255,255,255,0.15), transparent 60%);
+      animation: fadeIn 1.5s ease;
+    }
+
+    header h1 {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      opacity: 0;
+      animation: nameFade 2.5s ease forwards;
+      text-shadow: 0 0 20px rgba(255,255,255,0.6);
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0;
+      animation: fadeDelay 2s ease forwards;
+      animation-delay: 1.5s;
+    }
+
+    section {
+      padding: 80px 20px;
+      animation: fadeUp 1.2s ease;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .card {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(12px);
+      border-radius: 25px;
+      padding: 40px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+
+    .story {
+      text-align: center;
+      line-height: 1.9;
+    }
+
+    .slider {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+    }
+
+    .slider img {
+      flex: 0 0 280px;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 20px;
+      scroll-snap-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes nameFade {
+      from { opacity: 0; transform: scale(0.9); filter: blur(6px); }
+      to { opacity: 1; transform: scale(1); filter: blur(0); }
+    }
+
+    @keyframes fadeDelay {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Sabri ❤️ Julita</h1>
+  <p>Happy 4 Month Anniversary</p>
+  <p style="animation-delay:2.5s">14 September • Dari Jadian sampai Keseriusan</p>
+  <p style="animation-delay:3.5s">💍 Menuju halal & selamanya</p>
+</header>
+
+<section>
+  <h2>✨ Cerita Kita</h2>
+  <div class="card">
+    <div class="story">
+      <p>Kisah <strong>Sabri & Julita</strong> adalah perjalanan cinta yang tumbuh dengan doa dan keseriusan.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>📸 Galeri Kenangan</h2>
+  <div class="card">
+    <div class="slider">
+      <img src="WhatsApp Image 2026-01-13 at 13.37.52 (1).jpeg">
+      <img src="WhatsApp Image 2026-01-13 at 13.37.52.jpeg">
+      <img src="WhatsApp Image 2026-01-13 at 13.37.53.jpeg">
+      <img src="WhatsApp Image 2026-01-13 at 13.37.55.jpeg">
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>🎶 Lagu Kita</h2>
+  <div class="card">
+    <iframe width="100%" height="315" src="https://www.youtube.com/watch?v=D-VytLhH-KE&list=RDD-VytLhH-KE&start_radio=1" frameborder="0" allowfullscreen></iframe>
+  </div>
+</section>
+
+<footer>
+  <p>💗 Sabri & Julita • Menuju halal & selamanya 💗</p>
+</footer>
+
+</body>
+</html>
