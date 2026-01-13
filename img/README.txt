@@ -1,1 +1,0 @@
-Masukkan foto kenangan di folder ini (foto1.jpg, foto2.jpg, dst)
